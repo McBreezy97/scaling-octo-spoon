@@ -8,7 +8,6 @@ body {
     background: white;
     background-image: url("./CSS/images/Body-Background.jpg");
     font-size: 16px;
-    font-size: 16px;
     line-height: 1.5;
     color: #333;
     height: 100vh;
@@ -21,22 +20,11 @@ body {
     margin: auto;
 }
 
-main {
-    background-color:blanchedalmond
-}
-
 .navmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: antiquewhite;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
 }
 
 .logo {
@@ -48,6 +36,13 @@ main {
 .logo img {
     height: 100px;
     width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .navbutton {
@@ -62,9 +57,6 @@ main {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-}
-
-.navbutton {
     flex-shrink: 1;
     flex-basis: auto;
 }
@@ -103,6 +95,10 @@ main {
     background: #0b7dda;
 }
 
+main {
+    background-color:blanchedalmond
+}
+
 .main-banner {
     width: 100vw;
     height: 200px;
@@ -130,7 +126,7 @@ main {
 }
 
 .design-item img {
-    height: 100%;
+    height: 350px;
     width: 100%;
     object-fit: cover;
 }
@@ -138,150 +134,140 @@ main {
 .design-item a {
     height: 100%;
     object-fit: cover;
+    position: relative;
+    z-index: 2;
 }
 
 .design-link {
+    display: inline-block;
     background-color: #354779;
-    border: none;
+    height: 50px;
+    width: auto;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out; /* Makes the transformation smooth */
-    border: 1px solid black;
-    border-radius: 15px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow to give a 3D effect */
+    flex-shrink: 1;
+    flex-basis: auto;
 }
 
 .design-link:hover {
-    transform: scale(0.95); /* Makes the link slightly smaller when hovered over */
-    background-color: #3e8e41;
-    color: white;
+    background-color: #0b7dda;
 }
 
 .subscribe-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: antiquewhite;
 }
 
 .subscribe-container1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .subscribe-container1 h2 {
-    margin-bottom: 20px;
+    color: #354779;
 }
 
 .subscribe-container1 form {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .subscribe-container1 input[type="text"] {
     padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    width: 70%;
-    margin-right: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
 }
 
 .subscribe-container1 button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #354779;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #354779;
     color: white;
-    border: none;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow to give a 3D effect */
 }
 
 .subscribe-container1 button[type="submit"]:hover {
-    background-color: #0b7dda;
-    transform: translateY(5px); /* Move the button down by 5px */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Reduce the shadow to give a pressed effect */
+    background: #0b7dda;
 }
 
 .subscribe-container1 button[type="submit"]::before {
-    content: '';
+    content: "\00bb";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-}
-
-.subscribe-container1 button[type="submit"]:hover::before {
-    height: 100%;
-}
-
-.subscribe-container2 h2 {
-    margin-right: auto; /* Pushes the heading to the left */
-    margin-bottom: 20px; /* Adds some space below the heading */
+    opacity: 0;
+    top: 56%;
+    right: 20px;
+    transition: 0.5s;
 }
 
 .subscribe-container2 {
     display: flex;
-    flex-direction: column; /* Stacks the children vertically */
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center; /* Centers the children horizontally */
+    flex-grow: 1;
 }
 
-
-
-.subscribe-container h2, .subscribe-container form {
-    margin: 0;
-}
-
-.tier {
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-    color: #954535;
-}
-
-.tier:hover {
-    transform: scale(0.95);
-    color: red;
+.subscribe-container2 h2 {
+    color: #354779;
 }
 
 .tiers {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.tier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #354779;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.tier:hover {
+    background-color: #f1f1f1;
 }
 
 .tier img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 1px solid black;
-    border-radius: 5px; /* Makes the corners rounded */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow to give a 3D effect */
-    transition: box-shadow 0.3s ease-in-out;
 }
 
 .tier:hover img {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Changes the shadow when hovered over */
-}
-
-footer {
-    background-color: blanchedalmond;
+    opacity: 0.3;
 }
 
 .tier-button {
     background-color: #354779;
+    border-radius: 15px;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -289,28 +275,34 @@ footer {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px -33px;
+    margin: 4px 2px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out; /* Makes the transformation smooth */
-    border: 1px solid black;
-
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow to give a 3D effect */
 }
 
 .tier-button:hover {
-    transform: scale(0.95); /* Makes the button slightly smaller when hovered over */
-    background-color: #3e8e41;
+    background-color: #0b7dda;
+}
+
+footer {
+    background-color: #354779;
     color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .social-media a {
-    color: #333; /* Change the color of the icons */
-    font-size: 24px; /* Change the size of the icons */
-    margin-right: 10px; /* Add some space between the icons */
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1300px;
+        width: 1200px;
+        margin: auto;
     }
 }
