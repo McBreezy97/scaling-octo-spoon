@@ -135,6 +135,11 @@ main {
     object-fit: cover;
 }
 
+.design-item a {
+    height: 100%;
+    object-fit: cover;
+}
+
 .design-link {
     background-color: #354779;
     border: none;
