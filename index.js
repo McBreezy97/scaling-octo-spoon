@@ -5,9 +5,9 @@ function loadStyles() {
 
     // Set the href based on the window's width
     if (window.innerWidth < 768) {
-        link.href = 'css/mobile.css';
+        link.href = 'mobile.css';
     } else {
-        link.href = 'css/styles.css';
+        link.href = 'styles.css';
     }
 
     // Append the link element to the head
