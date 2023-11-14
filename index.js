@@ -1,7 +1,4 @@
 function loadStyles() {
-    // Remove existing link elements
-    Array.from(document.head.querySelectorAll('link[rel="stylesheet"]')).forEach(link => link.remove());
-
     // Create a new link element
     const link = document.createElement('link');
     link.rel = 'stylesheet';
